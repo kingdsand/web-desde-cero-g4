@@ -21,3 +21,31 @@ nav,
 section {
   display: block;
 }
+
+.new-arrivals {
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+  height: 400px;
+  width: 80%;
+}
+
+.new-arrivals h1 {
+  display: block;
+  align-items: center;
+  font-size: 40px;
+  text-align: center;
+}
+
+.new-garment {
+  background-color: #f0eeed;
+  height: 298px;
+  margin: 10px;
+  width: 295px;
+}
+
+.new-garment img {
+  height: 295px;
+  width: 290px;
+  border-radius: 20px;
+}
