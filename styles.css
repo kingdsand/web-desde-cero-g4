@@ -17,15 +17,18 @@
 
 @font-face {
   font-family: "IntegralCF-Regular";
-  src: url("fonts/Integral-CF/Fontspring-DEMO-integralcf-regular.otf") format('opentype'),
-  url("fonts/Integral-CF/Fontspring-DEMO-integralcf-extrabold.otf") format('opentype');
+  src: url("fonts/Integral-CF/Fontspring-DEMO-integralcf-regular.otf")
+      format("opentype"),
+    url("fonts/Integral-CF/Fontspring-DEMO-integralcf-extrabold.otf")
+      format("opentype");
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   font-family: "IntegralCF-Extra";
-  src: url("fonts/Integral-CF/Fontspring-DEMO-integralcf-extrabold.otf") format('opentype');
+  src: url("fonts/Integral-CF/Fontspring-DEMO-integralcf-extrabold.otf")
+    format("opentype");
   font-style: normal;
   font-weight: 900;
 }
@@ -45,14 +48,14 @@ section {
 }
 
 main {
-  width: 100%;
-  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .new-arrivals {
   background-color: white;
-  height: 450px;
   width: 100%;
+  margin-bottom: 120px;
 }
 
 .new-title {
@@ -63,11 +66,9 @@ main {
   text-align: center;
 }
 
-
 .new-arrivals-image {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .title-garment {
@@ -130,18 +131,17 @@ main {
 .new-garment {
   display: block;
   padding: 5px 5px;
-background-color: white;
+  background-color: white;
   border-radius: 25px;
 
   margin: 10px;
-
 }
 
 .new-garment img {
   background-color: #f0eeed;
   color: #f0eeed;
   height: 295px;
-  width: 290px;
+  width: 100%;
   border-radius: 25px;
 }
 
@@ -175,7 +175,32 @@ background-color: white;
 
 .top-selling {
   background-color: white;
-  height: 450px;
-  margin-top: 450px;
+  margin-bottom: 120px;
   width: 100%;
+}
+
+.top-selling-image {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.browse-dress-style {
+  background-color: #f0f0f0;
+  border-radius: 60px;
+  height: 860px;
+  width: 100%;
+}
+
+.dress-style-title {
+  font-family: "IntegralCF-Extra";
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.dress-style-types {
+  background-color: white;
+  padding: 0 10px;
 }
