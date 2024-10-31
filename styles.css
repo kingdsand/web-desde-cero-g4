@@ -204,3 +204,11 @@ main {
   background-color: white;
   padding: 0 10px;
 }
+
+.dress-style-types {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 400px;
+  width: 100%;
+  margin: 0 40px;
+}
