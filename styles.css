@@ -11,8 +11,26 @@
 */
 @font-face {
   font-family: "Satoshi-Regular";
-  src: url("fonts/Satoshi/Satoshi-Regular.woff") format("woff");
-  font-weight: bold;
+  src: url("fonts/Satoshi/Satoshi-Regular.woff") format("woff"),
+    url("fonts/Satoshi/Satoshi-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Satoshi-Black";
+  src: url("fonts/Satoshi/Satoshi-Black.ttf") format("truetype"),
+    url("fonts/Satoshi/Satoshi-Black.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: url("fonts/Satoshi/Satoshi-Variable.ttf") format("truetype"),
+    url("fonts/Satoshi/Satoshi-Variable.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
 }
 
 @font-face {
@@ -195,20 +213,44 @@ main {
   font-family: "IntegralCF-Extra";
   font-size: 48px;
   font-weight: 900;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   padding-top: 50px;
   text-align: center;
 }
 
 .dress-style-types {
-  background-color: white;
-  padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  margin: 20px 50px;
+  padding: 0 20px;
 }
 
-.dress-style-types {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  height: 400px;
-  width: 100%;
-  margin: 0 40px;
+.style-one {
+  background-color: white;
+  border-radius: 20px;
+  height: 289px;
+  width: 370px;
+}
+.style-two {
+  background-color: white;
+  border-radius: 20px;
+  height: 289px;
+  width: 670px;
+}
+
+.style-title {
+  font-family: "Satoshi-Variable";
+  font-size: 30px;
+  padding: 20px 30px;
+}
+
+.style-title {
+  max-width: 120px;
+}
+
+.style-image {
+  display: block;
+  position: static;
+  z-index: inherit1;
 }
